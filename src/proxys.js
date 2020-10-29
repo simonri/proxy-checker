@@ -32,7 +32,7 @@ const saveProxys = (fileName, proxys) => {
 };
 
 const testProxys = async (proxys) => {
-  const theUrl = "google.com";
+  const theUrl = "https://www.dropbox.com/robots.txt";
 
   let working = [];
   let count = 0;
@@ -58,14 +58,14 @@ const testProxys = async (proxys) => {
         host: ip,
         port: port
       },
-      timeout: 7000
+      timeout: 6000
     }
 
     try {
       await axios(options);
       working.push(proxy);
     } catch {}
-  }, {concurrency: 20});
+  }, {concurrency: 60});
 
   console.log(working);
 

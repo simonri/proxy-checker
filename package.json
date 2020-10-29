@@ -5,6 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.0",
-    "bluebird": "^3.7.2"
+    "bluebird": "^3.7.2",
+    "chromedriver": "^86.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
